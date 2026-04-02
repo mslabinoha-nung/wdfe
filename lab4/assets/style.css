@@ -1,83 +1,98 @@
 body{
     font-family: Verdana, sans-serif;
-    margin:0;
+    margin:0px;
 }
 h1,h2,h3{
-    font-family: Georgia,serif;
+    font-family: Georgia, serif;
     text-align: center;
-    color:	#B45309;
+    color:#B45309;    
 }
 .navigation{
-    padding-inline-start: 0px;
+    padding-inline-start:0px;
     text-align: center;
 }
 .navigation li{
     display:inline;
-}
-.navigation a{
-    text-decoration:none;
-    color:black;
-    border:1px solid black;
+    border:1px black solid;
     padding: 10px;
-    margin: 10px;
+    margin:5px;
     border-radius: 10px;
 }
+.navigation a{
+    color:black;
+    text-decoration: none;
+    font-size:18px;
+}
 .components-table{
-    margin:0 auto;
-    border: 1px solid #B45309;
+    margin: 0 auto;
+    border:1px solid #B45309;
     border-collapse: collapse;
 }
-.components-table td, .components-table th{
-    border: 1px solid #B45309;
+.components-table td{
+    border:1px solid #B45309;
+}
+.graph-container{
+    text-align: center;
 }
 .components-table tr:nth-child(even) {
   background-color: #FFFBF0;
 }
-.img-container{
-    text-align: center;
-}
-.img-container img{
-    width: 100%;
-    height: auto;
-}
 .subtitle{
+    font-size: 18px;
+    color:#333;
     text-align: center;
-    font-style: italic;
-    color: #555;
 }
-.general-competencies, .spec-competencies{
+.general-comps,.spec-comps{
     list-style-type: none;
 }
 header{
-    background-color: #FFF0C0;
     height:350px;
+    background-color: #FFF0C0;
 }
 header h1{
+    margin:0px;
     padding-top: 150px;
-    margin:0;
-    padding-bottom: 50px;
-}
-footer{
-    padding:40px;
-}
-.authors{
-    width:100%;
 }
 .author{
     width:250px;
-    padding:20px;
     display:inline-block;
+    margin:10px;
 }
 .author img{
     width:100%;
     height:350px;
     object-fit: cover;
 }
-.author p{
-    text-align: center;
-}
 .container{
     max-width: 900px;
-    margin: 0 auto;
+    margin:0 auto;
     padding:20px;
+}
+footer{
+    padding:20px;
+}
+.graph-container img{
+    width:100%;
+}
+#feedbackForm{
+    display: inline-block;
+    margin:0 auto;
+    width:250px;
+}
+.form-container{
+    text-align: center;
+}
+#feedbackForm input, #feedbackForm button, #feedbackForm textarea{
+    width:100%;
+    font-size:18px;
+    font-family: Verdana, sans-serif;
+    border-radius: 5px;
+    padding:5px 10px;
+}
+#feedbackForm textarea{
+    resize:none;
+    height:150px;
+}
+#feedbackForm button{
+    width:274px;
 }
