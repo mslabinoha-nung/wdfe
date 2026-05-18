@@ -32,6 +32,23 @@
                     </ul>
                 </nav>
             </header>
+            <div class="header-mobile">
+                <div class="logo-container">
+                    <img src="./assets/img/logo.svg" alt="Logo"/>
+                    <p>Crypt Land</p>
+                    <img id="hamburgerImage" src="./assets/img/hamburger.svg" alt="hamburger"/>
+                </div>
+                <ul class="mobile-menu" id="mobileMenu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Plateform</a></li>
+                        <li><a href="#">Solution</a></li>
+                        <li><a href="#">Customer</a></li>
+                        <li><a href="#">Price</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Log In</a></li>
+                        <li><a class="cta-btn" href="#">Sign Up</a></li>
+                </ul>
+            </div>
             <div class="hero-content container">
                 <h1>The Finance Solutions For Your Business</h1>
                 <p class="hero-subtitle">
@@ -326,5 +343,18 @@
                 <p>© 2023 Crypt Land. All rights reserved     |     Cookie Settings, Anti-Spam, Privacy, User agreement, Legal Notice and Responsible Disclosure</p>
             </div>
         </footer>
+    <script>
+        const hamburger =  document.getElementById('hamburgerImage');
+        const navItem =  document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', () => {
+            if(navItem.style.display!="flex"){
+                navItem.style.display="flex";
+            } else{
+                navItem.style.display="none";
+            }
+            
+        });
+    </script>    
     </body>
 </html>
